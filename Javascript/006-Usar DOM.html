@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mensagem(){
+            let texto = document.getElementById("descricao").value 
+            let saida= document.getElementById("texto")
+            saida.innerHTML = texto
+            saida.style.color = 'blue'
+            descricao.value = ""
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="descricao">
+    <input type="button" value="Clique Aqui" id="botao" onclick="mensagem()">
+    <br>
+    <h1 id="texto"></h1>
+</body>
+</html>
