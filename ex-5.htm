@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert('Seja bem-vindo(a) ao meu site!')
+        function calcular(){
+            let n1 = Number(window.prompt('Digite um número: '))
+            let res = document.querySelector('resultado')
+            res.innerHTML = 'O dobro de ' + n1 + ' é ' + n1*2 + ' e a metade é ' + n1/2
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Clique para calcular" onclick="calcular()">
+    <section id="resultado">
+        <p>O resultado vem aqui.</p>
+    </section>
+</body>
+</html>
